@@ -1,0 +1,31 @@
+1.-Investigar sobre numeros maya
+  
+ Aceptar:Realizar la investigacion correspondiente a lo que se me pide 
+
+ Rechazar:no hacer mi investigacion
+
+ Mitigar:buscar lo minimo 
+
+ Transferiri:hacer que alguien mas haga la ivestigacion y que me explique de una manera sensilla de entender
+
+
+2.-Desarrollar el programa indicado (Convertir numeros arabigos a maya,de maya a arabigos y diceño grafico)
+
+ Aceptar:realizo el programa como se me pide 
+ 
+ Rechazar:no realizar el programa
+
+ Mitigar:hacer solo unas partes del programa 
+
+ Transferir:Pedire a alguien mas que haga el programa por mi
+
+
+3.-Creacion de tutotial para el programa
+
+ Aceptar:hacer el tutorial como se debe
+
+ Recharar:no realizar el tutorial
+
+ mitigar:hacer un tutoriar simple sin mucho detalle
+
+ trasferir:pedirle a alguien mas que haga un tutorial bonito 
