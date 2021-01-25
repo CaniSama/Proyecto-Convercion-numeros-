@@ -1,0 +1,321 @@
+<html>
+    
+<head>
+    <link rel="stylesheet" href="Styles.css">
+<title>Conversioninador </title>
+<div class="noticia2">
+<body background="Img/fondo.jpg">
+    Numero <input type="number" name="num" id="id_num"><br><br>
+    <input style="margin-left: 50px;" type="button" name="Mostrar Conversion" value="Conversion" id="id_Conversion" onclick="operacion('Conversion');ConversionC('Conversion')"><br><br>
+    
+    <input type="hidden" name="sec3" id="id_box3"><br><br>
+    <input type="hidden" name="sec2" id="id_box2"><br><br>
+    <input type="hidden" name="sec3" id="id_box1"><br><br>    
+    
+    <img id="ImagenS3" src=""><br>  
+    <img id="ImagenS2" src=""><br>
+    <img id="ImagenS1" src="">
+
+</body>
+
+    <script>
+     
+      function operacion(op) 
+        {
+            
+            num = parseInt(document.getElementById("id_num").value);
+
+            document.getElementById("id_box3").value = op.toString();
+            document.getElementById("id_box2").value = op.toString();
+            document.getElementById("id_box1").value = op.toString();
+
+            if(num<0)
+        {
+            alert("favor de introducir un numero positivo");
+        }
+    
+
+            if(op == 'Conversion')
+            {  
+            
+            Rnum3 = num % 400;
+            Snum3 = num / 400;
+            if(Math.trunc(Snum3) <= 0)
+            {
+                document.getElementById("id_box3").value = " ";
+            }
+            else 
+            {
+                document.getElementById("id_box3").value = Snum3.toString();
+            }
+           
+            Rnum2 = num % 20;
+            Snum2 = Rnum3 / 20;
+            if(Snum3 == 1)
+            {
+                Snum2 = Math.trunc(Snum2);
+                document.getElementById("id_box2").value = Snum2.toString();
+            }
+
+            else if(Math.trunc(Snum2) <= 0)
+            {
+                document.getElementById("id_box2").value = " ";
+            }
+            else 
+            {
+                Snum2 = Math.trunc(Snum2);
+                document.getElementById("id_box2").value = Snum2.toString();
+            }
+
+            
+            Rnum1 = num % 1;
+            Snum1 = Rnum2 / 1;
+    
+            document.getElementById("id_box1").value = Snum1.toString();
+            }
+            
+        }
+
+        function ConversionC(OpCI)
+        {
+            
+
+            var simbolo3 = " "
+            var simbolo2 = " "
+            var simbolo1 = " "
+
+            if(OpCI == 'Conversion')
+            {
+               
+            switch(Snum3)
+            {
+                case 1: 
+                simbolo3 = 'img/uno.png'; 
+                simbolo2 = 'img/zero.png';
+                simbolo1 = 'img/zero.png';
+                break;
+            }
+
+            
+           
+            if(Snum2 == 1)
+            {
+                simbolo2 = 'img/uno.png';
+            }
+
+            if(Snum2 == 2)
+            {
+                simbolo2 = 'img/dos.png';
+            }
+
+            if(Snum2 == 3)
+            {
+                simbolo2 = 'img/tres.png';
+            }
+
+            if(Snum2 == 4)
+            {
+                simbolo2 = 'img/cuatro.png';
+            }
+
+            if(Snum2 == 5)
+            {
+                simbolo2 = 'img/cinco.png';
+            }
+
+            if(Snum2 == 6)
+            {
+                simbolo2 = 'img/seis.png';
+            }
+
+            if(Snum2 == 7)
+            {
+                simbolo2 = 'img/siete.png';
+            }
+
+            if(Snum2 == 8)
+            {
+                simbolo2 = 'img/ocho.png';
+            }
+
+            if(Snum2 == 9)
+            {
+                simbolo2 = 'img/nueve.png';
+            }
+
+            if(Snum2 == 10)
+            {
+                simbolo2 = 'img/diez.png';
+            }
+
+            if(Snum2 == 11)
+            {
+                simbolo2 = 'img/once.png';
+            }
+            
+            if(Snum2 == 12)
+            {
+                simbolo2 = 'img/doce.png';
+            }
+            
+            if(Snum2 == 13)
+            {
+                simbolo2 = 'img/trece.png';
+            }
+            
+            if(Snum2 == 14)
+            {
+                simbolo2 = 'img/catorcce.png';
+            }
+            
+            if(Snum2 == 15)
+            {
+                simbolo2 = 'img/quince.png';
+            }
+
+            if(Snum2 == 16)
+            {
+                simbolo2 = 'img/dieciseis';
+            }
+            
+            if(Snum2 == 17)
+            {
+                simbolo2 = 'img/diesiciete.png';
+            }
+            
+            if(Snum2 == 18)
+            {
+                simbolo2 = 'img/dieciocho.png';
+            }
+
+            if(Snum2 == 19)
+            {
+                simbolo2 = 'img/diecinueve.png';
+            }
+            
+            
+            
+           
+            if (Snum1 == 0)
+            {
+                simbolo1 = 'img/zero.png';
+            }
+
+            if(Snum1 == 1)
+            {
+                simbolo1 = 'img/uno.png';
+            }
+
+            if(Snum1 == 2)
+            {
+                simbolo1 = 'img/dos.png';
+            }
+
+            if(Snum1 == 3)
+            {
+                simbolo1 = 'img/tres.png';
+            }
+
+            if(Snum1 == 4)
+            {
+                simbolo1 = 'img/cuatro.png';
+            }
+
+            if(Snum1 == 5)
+            {
+                simbolo1 = 'img/cinco.png';
+            }
+
+            if(Snum1 == 6)
+            {
+                simbolo1 = 'img/seis.png';
+            }
+
+            if(Snum1 == 7)
+            {
+                simbolo1 = 'img/siete.png';
+            }
+
+            if(Snum1 == 8)
+            {
+                simbolo1 = 'img/ocho.png';
+            }
+
+            if(Snum1 == 9)
+            {
+                simbolo1 = 'img/nueve.png';
+            }
+
+            if(Snum1 == 10)
+            {
+                simbolo1 = 'img/diez.png';
+            }
+
+            if(Snum1 == 11)
+            {
+                simbolo1 = 'img/once.png';
+            }
+            
+            if(Snum1 == 12)
+            {
+                simbolo1 = 'img/doce.png';
+            }
+            
+            if(Snum1 == 13)
+            {
+                simbolo1 = 'img/trece.png';
+            }
+            
+            if(Snum1 == 14)
+            {
+                simbolo1 = 'img/catorcce.png';
+            }
+            
+            if(Snum1 == 15)
+            {
+                simbolo1 = 'img/quince.png';
+            }
+
+            if(Snum1 == 16)
+            {
+                simbolo1 = 'img/dieciseis';
+            }
+            
+            if(Snum1 == 17)
+            {
+                simbolo1 = 'img/diesiciete.png';
+            }
+            
+            if(Snum1 == 18)
+            {
+                simbolo1 = 'img/dieciocho.png';
+            }
+
+            if(Snum1 == 19)
+            {
+                simbolo1 = 'img/diecinueve.png';
+            }
+
+            document.getElementById("ImagenS3").src=simbolo3
+            document.getElementById("ImagenS2").src=simbolo2
+            document.getElementById("ImagenS1").src=simbolo1   
+
+            }
+            if(num>400)
+            {
+            document.getElementById("ImagenS3").src=""
+            document.getElementById("ImagenS2").src=""
+            document.getElementById("ImagenS1").src=""  
+
+            
+            alert("favor de introducir un numero menor a 400");
+        
+
+            }
+
+        }
+    </script>
+</head>
+</div>
+
+</html>
